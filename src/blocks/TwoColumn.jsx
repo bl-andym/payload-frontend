@@ -2,9 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 
 export default function TwoColumn({ heading, text, image, direction }) {
-    console.log('image: ', image)
+    console.log('direction: ', direction)
     return (
-        <div className={`component ${direction === 'reverse' ? 'reverse' : 'default'}`}>
+        <div className={`component ${direction === 'reverse' ? 'reverse' : ''}`}>
             <div className='content'>
                 <h2>{heading}</h2>
                 <p>{text}</p>
